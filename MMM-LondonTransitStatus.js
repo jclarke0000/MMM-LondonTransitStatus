@@ -107,7 +107,7 @@ Module.register("MMM-LondonTransitStatus", {
 
     //add icons
     if (alert.transportMode == "bus") {
-      line.appendChild(this.svgIconFactory("double-decker-bus-icon"));
+      line.appendChild(this.svgIconFactory("new-double-decker-bus-icon"));
     } else {
       line.appendChild(this.svgIconFactory("tube-icon"));
     }

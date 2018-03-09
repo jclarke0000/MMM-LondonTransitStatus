@@ -264,6 +264,17 @@ Color coding based on status
   top: -5px;
 }
 
+.MMM-LondonTransitStatus .alert.bus .line-name .new-double-decker-bus-icon {
+  height: 30px;
+  width: 17px;
+  margin-right: 6px;
+  fill: #FFF;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  top: -5px;
+}
+
 
 .MMM-LondonTransitStatus .alert.bus .line-name {
   font-size: 30px;
