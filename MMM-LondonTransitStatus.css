@@ -48,10 +48,10 @@
   fill: currentColor;
   color: #82bae5;
   width: 30px;
-  height: 30px;
+  height: 26px;
   display: block;
   position: absolute;
-  top: 0px;
+  top: 2px;
   left: 0px;
 }
 
@@ -169,7 +169,7 @@ Color coding based on status
   font-size: 20px;
   line-height: 25px;
   font-weight: bold;
-  padding: 0 20px 0 10px;
+  padding: 0 10px 0 5px;
   border-radius: 3px;
 }
 .MMM-LondonTransitStatus .alert.tube .line-name .tube-icon,
