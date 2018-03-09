@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Johnston';
+    src: url('/fonts/NJFont-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Johnston';
+    src: url('/fonts/NJFont-BookBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.MMM-LondonTransitStatus {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.MMM-LondonTransitStatus .all-good-service {
+  color: #666;
+}
+
+.MMM-LondonTransitStatus .alert {
+  margin: 0;
+  padding: 6px 0;
+  /*border-bottom: solid 1px #222;*/
+  position: relative;
+}
+
+.MMM-LondonTransitStatus .alert:before {
+  content: none;
+}
+
+.MMM-LondonTransitStatus .carousel-count {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.MMM-LondonTransitStatus .alert-icon {
+  fill: currentColor;
+  color: #82bae5;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+
+.MMM-LondonTransitStatus .alert .line-name,
+.MMM-LondonTransitStatus .alert .alert-type {
+  display: inline;
+  position: absolute;
+  white-space: nowrap;
+}
+
+
+.MMM-LondonTransitStatus .alert .line-name {
+  color: #FFF;
+  font-weight: bold;
+  display: block;
+  white-space: nowrap;
+  font-family: Johnston;
+  top: 3px;
+  left: 44px;
+}
+
+.MMM-LondonTransitStatus .alert .alert-type {
+  top: 32px;
+  left: 44px;
+  font-weight: 600;
+}
+
+.MMM-LondonTransitStatus .alert .alert-desc {
+  display: block;
+  margin-top: 50px;
+  font-size: 17px;
+  line-height: 20px;
+  padding-left: 44px;
+}
+
+/*
+
+Color coding based on status
+
+0 - "Special Service"
+1 - "Closed"
+2 - "Suspended"
+3 - "Part Suspended"
+4 - "Planned Closure"
+5 - "Part Closure"
+6 - "Severe Delays"
+7 - "Reduced Service"
+8 - "Bus Service"
+9 - "Minor Delays"
+10 - "Good Service"
+11 - "Part Closed"
+12 - "Exit Only"
+13 - "No Step Free Access"
+14 - "Change of frequency"
+15 - "Diverted"
+16 - "Not Running"
+17 - "Issues Reported"
+18 - "No Issues"
+19 - "Information"
+20 - "Service Closed"
+
+*/
+
+/* Good status */
+.MMM-LondonTransitStatus .alert-type.sev-18,
+.MMM-LondonTransitStatus .alert-type.sev-10 {  
+  color: #a3ea80;
+}
+
+/* Moderate status */
+.MMM-LondonTransitStatus .alert-type.sev-0,
+.MMM-LondonTransitStatus .alert-type.sev-4,
+.MMM-LondonTransitStatus .alert-type.sev-7,
+.MMM-LondonTransitStatus .alert-type.sev-8,
+.MMM-LondonTransitStatus .alert-type.sev-9,
+.MMM-LondonTransitStatus .alert-type.sev-11,
+.MMM-LondonTransitStatus .alert-type.sev-12,
+.MMM-LondonTransitStatus .alert-type.sev-13,
+.MMM-LondonTransitStatus .alert-type.sev-14,
+.MMM-LondonTransitStatus .alert-type.sev-15,
+.MMM-LondonTransitStatus .alert-type.sev-17,
+.MMM-LondonTransitStatus .alert-type.sev-19 {
+  color: #f8dd70;
+}
+
+/* Severe status */
+.MMM-LondonTransitStatus .alert-type.sev-1,
+.MMM-LondonTransitStatus .alert-type.sev-2,
+.MMM-LondonTransitStatus .alert-type.sev-3,
+.MMM-LondonTransitStatus .alert-type.sev-5,
+.MMM-LondonTransitStatus .alert-type.sev-6,
+.MMM-LondonTransitStatus .alert-type.sev-16,
+.MMM-LondonTransitStatus .alert-type.sev-20 {  
+  color: #ff5a44;
+}
+
+.MMM-LondonTransitStatus .alert-desc {
+  clear: both;
+}
+
+
+
+/*
+  tube line styles
+  Color schemes taken from official style guide here:
+  http://content.tfl.gov.uk/tube-status-presentation-user-guide.pdf
+*/
+
+.MMM-LondonTransitStatus .alert.tube .line-name,
+.MMM-LondonTransitStatus .alert.dlr .line-name,
+.MMM-LondonTransitStatus .alert.overground .line-name,
+.MMM-LondonTransitStatus .alert.tflrail .line-name,
+.MMM-LondonTransitStatus .alert.tram .line-name {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: bold;
+  padding: 0 20px 0 10px;
+  border-radius: 3px;
+}
+.MMM-LondonTransitStatus .alert.tube .line-name .tube-icon,
+.MMM-LondonTransitStatus .alert.dlr .line-name .tube-icon,
+.MMM-LondonTransitStatus .alert.overground .line-name .tube-icon,
+.MMM-LondonTransitStatus .alert.tflrail .line-name .tube-icon,
+.MMM-LondonTransitStatus .alert.tram .line-name .tube-icon {
+  height: 17px;
+  width: 23px;
+  margin-right: 10px;
+  fill: currentColor;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+
+.MMM-LondonTransitStatus .alert.tube.bakerloo .line-name {
+  background-color: #AE6118;
+  color: #FFFFFF;
+}
+.MMM-LondonTransitStatus .alert.tube.central .line-name {
+  background-color: #E41F1F;
+  color: #FFFFFF;
+}
+.MMM-LondonTransitStatus .alert.tube.circle .line-name {
+  background-color: #F8D42D;
+  color: #113892;
+}
+.MMM-LondonTransitStatus .alert.tube.district .line-name {
+  background-color: #007229;
+  color: #FFFFFF;
+}
+.MMM-LondonTransitStatus .alert.tube.hammersmith-city .line-name {
+  background-color: #E899A8;
+  color: #113892;
+}
+.MMM-LondonTransitStatus .alert.tube.jubilee .line-name {
+  background-color: #686E72;
+  color: #FFFFFF;
+}
+.MMM-LondonTransitStatus .alert.tube.metropolitan .line-name {
+  background-color: #893267;
+  color: #FFFFFF;
+}
+.MMM-LondonTransitStatus .alert.tube.northern .line-name {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: solid 1px #FFFFFF;
+}
+.MMM-LondonTransitStatus .alert.tube.piccadilly .line-name {
+  background-color: #0450A1;
+  color: #FFFFFF;
+}
+.MMM-LondonTransitStatus .alert.tube.victoria .line-name {
+  background-color: #009FE0;
+  color: #FFFFFF;
+}
+.MMM-LondonTransitStatus .alert.tube.waterloo-city .line-name {
+  background-color: #70C3CE;
+  color: #113892;
+}
+.MMM-LondonTransitStatus .alert.dlr .line-name {
+  background-color: #00BBB4;
+  color: #FFFFFF;
+}
+.MMM-LondonTransitStatus .alert.overground .line-name {
+  background-color: #E86A10;
+  color: #FFFFFF;
+}
+.MMM-LondonTransitStatus .alert.tflrail .line-name {
+  background-color: #0019A8;
+  color: #FFFFFF;
+}
+.MMM-LondonTransitStatus .alert.tram .line-name {
+  background-color: #66CC00;
+  color: #FFFFFF;
+}
+
+/*
+  Bus line styles
+*/
+
+.MMM-LondonTransitStatus .alert.bus .line-name .double-decker-bus-icon {
+  height: 30px;
+  width: 19px;
+  margin-right: 6px;
+  fill: #FFF;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  top: -5px;
+}
+
+
+.MMM-LondonTransitStatus .alert.bus .line-name {
+  font-size: 30px;
+  color: #EBFE6A;
+  top: 4px;
+}
+
+
+

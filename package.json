@@ -1,0 +1,14 @@
+{
+  "name": "mmm-londontransitstatus",
+  "version": "1.0.0",
+  "description": "MagicMirror module to display status updates for the London Transit System",
+  "main": "MMM-LondonTransiteStatus.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Clarke",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}
