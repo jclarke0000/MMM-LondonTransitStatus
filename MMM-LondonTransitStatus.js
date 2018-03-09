@@ -33,7 +33,7 @@ Module.register("MMM-LondonTransitStatus", {
 
     this.sendSocketNotification("GET_LONDON_TRANSIT_STATUS", this.config);
     this.pollTimer = setInterval(function() {
-      self.sendSocketNotification("GET_LONDON_TRANSIT_STATUS", this.config);
+      self.sendSocketNotification("GET_LONDON_TRANSIT_STATUS", self.config);
     }, this.config.dataPollInterval);
   },
 

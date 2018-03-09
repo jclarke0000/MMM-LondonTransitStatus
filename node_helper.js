@@ -62,6 +62,11 @@ module.exports = NodeHelper.create({
             
             requestCounter = requestCounter + 1;
             if (requestCounter >= urls.length) {
+
+              // console.log("------------------------ > " + alertsToReturn.length + " alerts:");
+              // console.log(JSON.stringify(alertsToReturn));
+
+
               self.sendSocketNotification("LONDON_TRANSIT_STATUS", alertsToReturn);
             }
 

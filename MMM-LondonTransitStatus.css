@@ -46,7 +46,7 @@
 
 .MMM-LondonTransitStatus .alert-icon {
   fill: currentColor;
-  color: #82bae5;
+  color: #F8DD70;
   width: 30px;
   height: 26px;
   display: block;
@@ -166,11 +166,10 @@ Color coding based on status
 .MMM-LondonTransitStatus .alert.overground .line-name,
 .MMM-LondonTransitStatus .alert.tflrail .line-name,
 .MMM-LondonTransitStatus .alert.tram .line-name {
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 27px;
+  line-height: 27px;
   font-weight: bold;
-  padding: 0 10px 0 5px;
-  border-radius: 3px;
+  color: #FFFFFF;
 }
 .MMM-LondonTransitStatus .alert.tube .line-name .tube-icon,
 .MMM-LondonTransitStatus .alert.dlr .line-name .tube-icon,
@@ -179,74 +178,76 @@ Color coding based on status
 .MMM-LondonTransitStatus .alert.tram .line-name .tube-icon {
   height: 17px;
   width: 23px;
-  margin-right: 10px;
+  margin-rixght: 10px;
   fill: currentColor;
   vertical-align: top;
   display: inline-block;
   position: relative;
-  top: 4px;
+  padding: 6px 3px;
+  margin-right: 4px;
+  top: -3px;
 }
 
-.MMM-LondonTransitStatus .alert.tube.bakerloo .line-name {
+.MMM-LondonTransitStatus .alert.tube.bakerloo .line-name .tube-icon {
   background-color: #AE6118;
   color: #FFFFFF;
 }
-.MMM-LondonTransitStatus .alert.tube.central .line-name {
+.MMM-LondonTransitStatus .alert.tube.central .line-name .tube-icon {
   background-color: #E41F1F;
   color: #FFFFFF;
 }
-.MMM-LondonTransitStatus .alert.tube.circle .line-name {
+.MMM-LondonTransitStatus .alert.tube.circle .line-name .tube-icon {
   background-color: #F8D42D;
   color: #113892;
 }
-.MMM-LondonTransitStatus .alert.tube.district .line-name {
+.MMM-LondonTransitStatus .alert.tube.district .line-name .tube-icon {
   background-color: #007229;
   color: #FFFFFF;
 }
-.MMM-LondonTransitStatus .alert.tube.hammersmith-city .line-name {
+.MMM-LondonTransitStatus .alert.tube.hammersmith-city .line-name .tube-icon {
   background-color: #E899A8;
   color: #113892;
 }
-.MMM-LondonTransitStatus .alert.tube.jubilee .line-name {
+.MMM-LondonTransitStatus .alert.tube.jubilee .line-name .tube-icon {
   background-color: #686E72;
   color: #FFFFFF;
 }
-.MMM-LondonTransitStatus .alert.tube.metropolitan .line-name {
+.MMM-LondonTransitStatus .alert.tube.metropolitan .line-name .tube-icon {
   background-color: #893267;
   color: #FFFFFF;
 }
-.MMM-LondonTransitStatus .alert.tube.northern .line-name {
+.MMM-LondonTransitStatus .alert.tube.northern .line-name .tube-icon {
   background-color: #000000;
   color: #FFFFFF;
   border: solid 1px #FFFFFF;
 }
-.MMM-LondonTransitStatus .alert.tube.piccadilly .line-name {
+.MMM-LondonTransitStatus .alert.tube.piccadilly .line-name .tube-icon {
   background-color: #0450A1;
   color: #FFFFFF;
 }
-.MMM-LondonTransitStatus .alert.tube.victoria .line-name {
+.MMM-LondonTransitStatus .alert.tube.victoria .line-name .tube-icon {
   background-color: #009FE0;
   color: #FFFFFF;
 }
-.MMM-LondonTransitStatus .alert.tube.waterloo-city .line-name {
+.MMM-LondonTransitStatus .alert.tube.waterloo-city .line-name .tube-icon {
   background-color: #70C3CE;
   color: #113892;
 }
-.MMM-LondonTransitStatus .alert.dlr .line-name {
-  background-color: #00BBB4;
-  color: #FFFFFF;
+.MMM-LondonTransitStatus .alert.dlr .line-name .tube-icon {
+  background-color: #FFFFFF;
+  color: #00BBB4;
 }
-.MMM-LondonTransitStatus .alert.overground .line-name {
-  background-color: #E86A10;
-  color: #FFFFFF;
+.MMM-LondonTransitStatus .alert.overground .line-name .tube-icon {
+  background-color: #FFFFFF;
+  color: #E86A10;
 }
-.MMM-LondonTransitStatus .alert.tflrail .line-name {
-  background-color: #0019A8;
-  color: #FFFFFF;
+.MMM-LondonTransitStatus .alert.tflrail .line-name .tube-icon {
+  background-color: #FFFFFF;
+  color: #0019A8;
 }
-.MMM-LondonTransitStatus .alert.tram .line-name {
-  background-color: #66CC00;
-  color: #FFFFFF;
+.MMM-LondonTransitStatus .alert.tram .line-name .tube-icon {
+  background-color: #FFFFFF;
+  color: #66CC00;
 }
 
 /*
