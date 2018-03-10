@@ -6,9 +6,13 @@ https://github.com/MichMich/MagicMirror
 
 This module displays status alerts for TfL London Transport.
 
+![Screen Shot 1](/../screenshots/screenshot01.jpg?raw=true "Screen Shot 1")
+![Screen Shot 2](/../screenshots/screenshot02.jpg?raw=true "Screen Shot 2")
+
+
 ## Installation
 
-1. Navigate to your MagicMirro `modules` directory and execute<br>
+1. Navigate to your MagicMirror `modules` directory and execute<br>
 `git clone https://github.com/jclarke0000/MMM-LondonTransitStatus.git`
 2. Enter the new `MMM-LondonTransitStatus` directory and execute `npm install`.
 
@@ -39,11 +43,11 @@ Register for an API App ID and Key here:
     </tr>
     <tr>
       <td><code>modes</code></td>
-      <td>Comma delinetated string indicating the transit modes to show alerts for.  Valid options are <code>tube</code>, <code>dlr</code>, <code>overground</code>, <code>tflrail</code> and <code>tram</code>. Alerts for bus routes are specified with the <code>busLines</code> property.  if you ONLY want to show alerts for bus lines, then make sure <code>modes</code> is specified as <code>""</code>.<br><br><strong>Type</strong> <code>String</code><br>Defaults to <code>"tube"</code>.</td>
+      <td>Transit modes to show alerts for.  Valid options are <code>tube</code>, <code>dlr</code>, <code>overground</code>, <code>tflrail</code> and <code>tram</code>. Separate multiple entries with a comma character (e.g.: <code>"tube,tflrail,dlr"</code>). Don not specify <code>bus</code> here. Alerts for bus routes are specified with the <code>busLines</code> property.  If you ONLY want to show alerts for bus lines, then make sure <code>modes</code> is specified as <code>""</code>.<br><br><strong>Type</strong> <code>String</code><br>Defaults to <code>"tube"</code>.</td>
     </tr>
     <tr>
       <td><code>busLines</code></td>
-      <td>While it's technically possible to poll the API for the entire bus system, there are over 300 routes and the query takes some time.  Likely you are only interested in a handful of routes, so specify them by number here.  Separate multiple route numbers with commas.<br><br><strong>Type</strong> <code>String</code><br>Defaults to <code>""</code>.</td>
+      <td>While it's technically possible to poll the API for the entire bus system as we do for all the other modes, there are over 300 routes and the query takes some time.  Likely you are only interested in a handful of routes, so specify them by number here.  Separate multiple route numbers with commas (e.g.: <code>"27,97,237,267"</code>).<br><br><strong>Type</strong> <code>String</code><br>Defaults to <code>""</code>.</td>
     </tr>
     <tr>
       <td><code>dataPollInterval</code></td>
@@ -59,7 +63,7 @@ Register for an API App ID and Key here:
     </tr>
     <tr>
       <td><code>hideIfNoAlerts</code></td>
-      <td>Whether the module should hide itself if there are no alerts to display.<br><br><strong>Type</strong> <code>Boolean</code><br>Defaults to <code>true</code>.</td>
+      <td>Whether the module should hide itself if there are no alerts to display.<br><br><strong>Type</strong> <code>Boolean</code><br>Defaults to <code>false</code>.</td>
     </tr>
     <tr>
       <td><code>noAlertsMessage</code></td>
