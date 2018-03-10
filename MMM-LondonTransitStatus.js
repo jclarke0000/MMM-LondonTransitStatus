@@ -1,12 +1,15 @@
 Module.register("MMM-LondonTransitStatus", {
 
   defaults: {
+    app_id: "",
+    app_key: "",
     dataPollInterval: 5 * 60 * 1000, //poll TfL Api every 5 minutes
     alertCarouselInterval: 30 * 1000, //cycle through alerts every 30 seconds
-    modes: "tube,dlr,overground,tflrail",
+    modes: "tube",
     busLines: "",
-    hideIfNoAlerts: true,
-    animationSpeed: 1000
+    hideIfNoAlerts: false,
+    animationSpeed: 1000,
+    noAlertsMessage: "All clear! No service interruptions."
   },
 
   /* the only valid values for modes. All others will be ignored */
@@ -74,10 +77,17 @@ Module.register("MMM-LondonTransitStatus", {
       return wrapper;
     }
 
-    if (this.alertsObj.length == 0 && !this.hideIfNoAlerts) {
+    if (this.alertsObj.length == 0 && this.config.hideIfNoAlerts) {
+      this.hide(this.config.animationSpeed, {lockString: this.identifier});
+      return wrapper;
+    } else if (this.alertsObj.length == 0) {
       var allGoodDiv = document.createElement("div");
       allGoodDiv.classList.add("all-good-service");
-      allGoodDiv.innerHTML = "No service interuptions to report";
+      allGoodDiv.appendChild(this.svgIconFactory("check-icon"));
+      var allGoodDivMsg = document.createElement("span");
+      allGoodDivMsg.classList.add("all-good-service-msg");
+      allGoodDivMsg.innerHTML = this.config.noAlertsMessage;
+      allGoodDiv.appendChild(allGoodDivMsg);
       wrapper.appendChild(allGoodDiv);
       return wrapper;
     }
@@ -132,6 +142,8 @@ Module.register("MMM-LondonTransitStatus", {
     if (!this.carouselStarted) {
       this.startCarouselTimer();
     }
+
+    this.show(this.config.animationSpeed, {lockString: this.identifier});
     return wrapper;
 
 

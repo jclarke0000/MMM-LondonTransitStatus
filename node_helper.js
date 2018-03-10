@@ -73,7 +73,7 @@ module.exports = NodeHelper.create({
           } else {
 
             //write an error into the console
-            console.log("[" + this.name + "] Cannot get status update: " + error);
+            console.log("[" + self.name + "] Cannot get status update: " + error);
             console.log("      url: " + urls[index]);
             
             //update the counter anyway, so the front end will get notified

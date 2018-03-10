@@ -19,6 +19,24 @@
 
 .MMM-LondonTransitStatus .all-good-service {
   color: #666;
+  position: relative;
+}
+
+.MMM-LondonTransitStatus .all-good-service .check-icon {
+  display: inline-block;
+  fill: currentColor;
+  width: 30px;
+  height: 30px;
+  color: #A3EA80;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.MMM-LondonTransitStatus .all-good-service .all-good-service-msg {
+  display: block;
+  padding-top: 3px;
+  padding-left: 40px;
 }
 
 .MMM-LondonTransitStatus .alert {
