@@ -8,6 +8,7 @@ This module displays status alerts for TfL London Transport.
 
 ![Screen Shot 1](/../screenshots/screenshot01.jpg?raw=true "Screen Shot 1")
 ![Screen Shot 2](/../screenshots/screenshot02.jpg?raw=true "Screen Shot 2")
+![Screen Shot 3](/../screenshots/screenshot03.jpg?raw=true "Screen Shot 3")
 
 
 ## Installation
