@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Johnston';
-    src: url('/fonts/NJFont-Book.woff') format('woff');
+    src: url('fonts/NJFont-Book.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Johnston';
-    src: url('/fonts/NJFont-BookBold.woff') format('woff');
+    src: url('fonts/NJFont-BookBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
